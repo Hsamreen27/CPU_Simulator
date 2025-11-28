@@ -1,0 +1,31 @@
+# Build artifacts
+build/*.o
+build/cpu_simulator
+a.out
+
+# Binary files (can be regenerated from assembly)
+programs/bin/*.bin
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Test files (if you want to exclude them)
+programs/asm/test_*.asm
+programs/bin/test_*.bin
+test/
+
+# Temporary files
+*.tmp
+*.bak

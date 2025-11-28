@@ -1,0 +1,38 @@
+CPU Simulator - File Organization and Build Order
+==================================================
+
+Core Header Files (include/):
+1. cpu.h           - CPU structure, registers, flags, memory segments
+2. alu.h           - ALU operations and flag updates
+3. memory.h        - Memory read/write and program loading
+4. instructions.h  - ISA definition, opcodes, addressing modes
+5. debug.h         - Debug utilities for displaying CPU/memory state
+6. linker.h        - Assembler and label resolution
+
+Core Source Files (src/):
+1. alu.c           - ALU implementation with flag updates (CRITICAL: ADD/SUB call ALU functions)
+2. memory.c        - Memory operations with bounds checking
+3. instructions.c  - Instruction decode/execute (CRITICAL: proper addressing mode handling)
+4. cpu.c           - Fetch-decode-execute loop (CRITICAL: PC increment logic for jumps)
+5. debug.c         - Debug output functions
+6. linker.c        - Two-pass assembler with label resolution
+7. main.c          - Entry point, command-line interface
+
+Assembly Programs (programs/asm/):
+1. timer.asm       - Demonstrates Fetch-Decode-Execute cycles (counts 0-5)
+2. hello.asm       - Prints "Hello, World" using ASCII codes
+3. fib.asm         - Computes Fibonacci sequence up to 55
+
+Build Order (Makefile):
+1. Compile all .c files to .o files
+2. Link all .o files into build/cpu_simulator executable
+
+Usage:
+- Assemble: ./build/cpu_simulator assemble <input.asm> <output.bin>
+- Run:      ./build/cpu_simulator run <input.bin>
+
+Critical Bug Fixes Applied:
+- ADD/SUB now call ALU functions to update flags (Z, N, O)
+- PC increment skipped after jump instructions (JUMP, JZ, JNZ)
+- Addressing modes simplified to instruction semantics
+- Label resolution with whitespace trimming
