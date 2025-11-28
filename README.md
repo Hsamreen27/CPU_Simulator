@@ -235,13 +235,3 @@ All three demonstration programs have been tested and verified:
 - Register-only arithmetic operations
 
 ---
-
-## Authors and Acknowledgments
-
-This CPU simulator was developed as an educational project to demonstrate:
-- Computer architecture fundamentals
-- Instruction set design
-- Assembly language programming
-- CPU simulation and emulation
-
----
