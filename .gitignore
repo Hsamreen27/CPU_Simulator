@@ -22,7 +22,7 @@ programs/bin/*.bin
 *.log
 
 # Test files (if you want to exclude them)
-programs/asm/test_*.asm
+
 programs/bin/test_*.bin
 test/
 
