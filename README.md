@@ -32,7 +32,9 @@ CPU_Simulator/
 
 ---
 
-## CPU Architecture
+## CPU Schematic
+
+Below is the CPU architecture used in this project:
 
 <img width="8278" height="1216" alt="image" src="https://github.com/user-attachments/assets/3bc5fd40-f4e2-40c5-9777-4180d183e76a" />
 
