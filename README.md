@@ -34,6 +34,9 @@ CPU_Simulator/
 
 ## CPU Architecture
 
+<img width="8278" height="1216" alt="image" src="https://github.com/user-attachments/assets/3bc5fd40-f4e2-40c5-9777-4180d183e76a" />
+
+
 ### Registers
 - **General Purpose**: R0, R1, R2, R3 (32-bit)
 - **Special Purpose**: 
