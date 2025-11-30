@@ -80,7 +80,12 @@ View Video recording -> docs -> Fib_Cpu_Simulator.mp4
 ## Building and Running
 
 ### Compilation
+
+**Clone the repository**:
+
 ```bash
+git clone https://github.com/Hsamreen27/CPU_Simulator
+cd CPU_Simulator
 make
 ```
 
