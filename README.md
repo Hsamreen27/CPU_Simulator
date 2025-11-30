@@ -81,6 +81,12 @@ The required demo video for the Fibonacci program is included in the repository 
 
 ## Building and Running
 
+### Requirements
+- macOS or Linux
+- GCC or Clang
+- Make
+- Terminal / Shell (bash, zsh)
+
 ### Compilation
 
 **Clone the repository**:
