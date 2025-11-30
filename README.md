@@ -162,6 +162,24 @@ make
 - Loop termination with zero flag
 - Multi-register coordination
 
+## How the Fibonacci Program Works (Required for Assignment)
+
+The Fibonacci program uses four registers:
+- **R0** – current Fibonacci value (a)
+- **R1** – next value (b)
+- **R2** – temporary sum (a + b)
+- **R3** – loop counter
+
+Each iteration:
+1. `OUT R0` prints the current value  
+2. `ADD R2, R0, R1` computes the next Fibonacci number  
+3. Values are shifted: `a = b`, `b = temp`  
+4. `SUB R3, R3, 1` decreases the counter  
+5. `JNZ loop` repeats until R3 becomes zero
+
+This demonstrates the CPU’s Fetch–Decode–Execute cycle, ALU operations, register updates, flag-based branching, and correct program control flow.
+
+
 ---
 
 ## Critical Implementation Details
