@@ -36,6 +36,8 @@ CPU_Simulator/
 
 <img width="8278" height="1216" alt="image" src="https://github.com/user-attachments/assets/3bc5fd40-f4e2-40c5-9777-4180d183e76a" />
 
+View Video recording -> docs -> Fib_Cpu_Simulator.mp4
+
 
 ### Registers
 - **General Purpose**: R0, R1, R2, R3 (32-bit)
