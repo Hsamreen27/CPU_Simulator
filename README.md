@@ -236,6 +236,32 @@ All three demonstration programs have been tested and verified:
 
 ---
 
+## Recursion and Function Calls
+
+### Factorial Program
+
+This project includes a recursive factorial implementation demonstrating function calls and stack management.
+
+**Files:**
+- `programs/c/factorial.c` - C reference implementation
+- `programs/asm/factorial.asm` - Assembly implementation
+
+**Run the program:**
+```bash
+./build/cpu_simulator assemble programs/asm/factorial.asm programs/bin/factorial.bin
+./build/cpu_simulator run programs/bin/factorial.bin | grep "OUT:"
+```
+
+**Output:** `OUT: R1 = 00000078` (0x78 = 120 decimal = 5!)
+
+**Key Features:**
+- CALL/RET instructions for function calls
+- PUSH/POP for stack management
+- Recursive calls with multiple stack frames
+- Demonstrates how factorial(5) creates 5 nested function calls
+
+---
+
 ## Authors and Acknowledgments
 
 This CPU simulator was developed as an educational project to demonstrate:
@@ -243,5 +269,6 @@ This CPU simulator was developed as an educational project to demonstrate:
 - Instruction set design
 - Assembly language programming
 - CPU simulation and emulation
+- Function calls and recursion
 
 ---

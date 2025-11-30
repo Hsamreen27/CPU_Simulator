@@ -150,6 +150,9 @@ uint32_t translate_assembly_line_to_binary(const char *line) {
     } else if (strcmp(opcode, "JUMP") == 0 || strcmp(opcode, "JZ") == 0 || strcmp(opcode, "JNZ") == 0) {
         binary_instruction |= get_opcode_binary(opcode) << 24;
         operand_count = 1;
+    } else if (strcmp(opcode, "CALL") == 0) {
+        binary_instruction |= 0x15 << 24;
+        operand_count = 1;
     } else if (strcmp(opcode, "RET") == 0) {
         binary_instruction |= 0x16 << 24;
         operand_count = 0;

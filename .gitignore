@@ -29,3 +29,6 @@ test/
 # Temporary files
 *.tmp
 *.bak
+
+# Documentation and reports (keep local only)
+docs/

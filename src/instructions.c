@@ -335,15 +335,15 @@ void execute_instruction(CPU *cpu, Instruction instruction) {
             // Log function call
             log_function_call("recursive_function", call_depth++, params, param_count);
 
-            // Push current PC onto the stack
+            // Push return address (next instruction) onto the stack
             cpu->sp -= 4;
-            write_memory(cpu->memory, cpu->sp, cpu->pc);
+            write_memory(cpu->memory, cpu->sp, cpu->pc + 4);
 
             // Display the updated stack
             display_stack(cpu);
 
             // Jump to the function address
-            cpu->pc = cpu->registers[instruction.operands[0]];
+            cpu->pc = resolve_operand(cpu, instruction.operands[0], instruction.modes[0]);
             break;
         }
 
