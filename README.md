@@ -32,7 +32,16 @@ CPU_Simulator/
 
 ---
 
-## CPU Architecture
+## CPU Schematic
+
+Below is the CPU architecture used in this project:
+
+<img width="8278" height="1216" alt="image" src="https://github.com/user-attachments/assets/3bc5fd40-f4e2-40c5-9777-4180d183e76a" />
+
+The required demo video for the Fibonacci program is included in the repository at:
+**docs/Fib_Cpu_Simulator.mp4**
+
+
 
 ### Registers
 - **General Purpose**: R0, R1, R2, R3 (32-bit)
@@ -72,8 +81,19 @@ CPU_Simulator/
 
 ## Building and Running
 
+### Requirements
+- macOS or Linux
+- GCC or Clang
+- Make
+- Terminal / Shell (bash, zsh)
+
 ### Compilation
+
+**Clone the repository**:
+
 ```bash
+git clone https://github.com/Hsamreen27/CPU_Simulator
+cd CPU_Simulator
 make
 ```
 
@@ -141,6 +161,24 @@ make
 - Value shifting using ADD/SUB
 - Loop termination with zero flag
 - Multi-register coordination
+
+## How the Fibonacci Program Works
+
+The Fibonacci program uses four registers:
+- **R0** – current Fibonacci value (a)
+- **R1** – next value (b)
+- **R2** – temporary sum (a + b)
+- **R3** – loop counter
+
+Each iteration:
+1. `OUT R0` prints the current value  
+2. `ADD R2, R0, R1` computes the next Fibonacci number  
+3. Values are shifted: `a = b`, `b = temp`  
+4. `SUB R3, R3, 1` decreases the counter  
+5. `JNZ loop` repeats until R3 becomes zero
+
+This demonstrates the CPU’s Fetch–Decode–Execute cycle, ALU operations, register updates, flag-based branching, and correct program control flow.
+
 
 ---
 
