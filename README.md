@@ -162,7 +162,7 @@ make
 - Loop termination with zero flag
 - Multi-register coordination
 
-## How the Fibonacci Program Works (Required for Assignment)
+## How the Fibonacci Program Works
 
 The Fibonacci program uses four registers:
 - **R0** – current Fibonacci value (a)
