@@ -38,8 +38,9 @@ Below is the CPU architecture used in this project:
 
 <img width="8278" height="1216" alt="image" src="https://github.com/user-attachments/assets/3bc5fd40-f4e2-40c5-9777-4180d183e76a" />
 
-The required demo video for the Fibonacci program is included in the repository at:
+The required demo video for the Fibonacci and Program Layout & Execution, factorial program is included in the repository at:
 **docs/Fib_Cpu_Simulator.mp4**
+**docs/Fact_Cpu_Simulator.mp4**
 
 
 
@@ -298,15 +299,5 @@ This project includes a recursive factorial implementation demonstrating functio
 - Recursive calls with multiple stack frames
 - Demonstrates how factorial(5) creates 5 nested function calls
 
----
-
-## Authors and Acknowledgments
-
-This CPU simulator was developed as an educational project to demonstrate:
-- Computer architecture fundamentals
-- Instruction set design
-- Assembly language programming
-- CPU simulation and emulation
-- Function calls and recursion
 
 ---
