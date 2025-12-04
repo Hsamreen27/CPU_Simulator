@@ -38,10 +38,7 @@ Below is the CPU architecture used in this project:
 
 <img width="8278" height="1216" alt="image" src="https://github.com/user-attachments/assets/3bc5fd40-f4e2-40c5-9777-4180d183e76a" />
 
-The required demo video for the Fibonacci and Program Layout & Execution, factorial program is included in the repository at:
-
-- [Fibonacci CPU Simulator Demo](docs/Fib_Cpu_Simulator.mp4)  
-- [Factorial (Program Layout & Execution) Demo](docs/Fact_Cpu_Simulator.mp4)
+The required demo videos for the Fibonacci and Program Layout & Execution, factorial program is included in the repository at:
 **docs/Fib_Cpu_Simulator.mp4** and 
 **docs/Fact_Cpu_Simulator.mp4**
 
